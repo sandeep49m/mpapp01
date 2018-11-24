@@ -1,0 +1,40 @@
+This is the {{name}}. <br>
+I make the SPA app work :-)
+
+{{!--#if edit}}
+    <ul>
+        {{#each model as  |item| }}
+          <li>{{item}}</li>
+        {{/each}}
+    </ul>      
+ {{/if--}}
+ 
+<!--<button {{action 'changeEdit'}}>Toggle</button>-->
+<!--<h2>Table 1</h2>
+<table class={{if colorChange "changecolor" ""}}>
+    <tr>
+        <th>Name</th>
+        <th>headquarters</th>
+        <th>revenue</th>
+    </tr>
+    {{#each model as  |item| }}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.headquarters}}</td>
+            <td>{{item.revenue}}</td>
+        </tr>
+    {{/each}}
+</table>
+<br />
+<button {{action 'changeColor'}}>Change Color</button>-->
+
+<div>Hi Mr. {{firstName}} {{lastName}}</div><hr>
+<div> Last Name is disabled: {{nameDisabled}}<br></div>
+<hr> <br>
+<div>First Name : {{input value=firstName size=20 }}</div>
+<div> Last Name : {{input value=lastName disabled=nameDisabled}}</div>
+<br><br>
+
+<div><small>Disable last name ? </small>
+       {{input type="checkbox" checked=nameDisabled}}
+</div>

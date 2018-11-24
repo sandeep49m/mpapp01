@@ -1,0 +1,36 @@
+{{!-- <ul>
+    <li>{{#link-to "books.index"}}
+          Fetch All the Books From Server{{/link-to}} 
+          <p style="color:red">[Note: Won't work since there's no server.]</p>
+    </li>
+
+    <li>{{#link-to "books.new"}}
+            Create a new book{{/link-to}}
+    </li>
+</ul><br><br><br>
+
+{{outlet}} --}}
+
+{{!-- {{profile-card-static}} --}}
+
+{{!-- {{profile-card name=model.name avatar=model.avatar bio=model.bio}} --}}
+{{!-- <p>{{my-btn}} </p>
+
+<b>Info:</b> <span id="info"> {{title}}</span> --}}
+
+
+{{!-- <h4> Index view: Bubbling actions through components</h4>
+
+{{pressCount}} Button presses
+{{button-wrapper action="buttonClick"}} --}}
+{{!-- {{comp-test}} --}}
+
+<div class="row">
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>
+
+<div class="new-question-box">
+  {{new-question saveQuestion="saveQuestion"}}
+</div>

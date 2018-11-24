@@ -1,0 +1,31 @@
+{{!-- The following component displays Ember's default welcome message. --}}
+{{!--welcome-page --}}
+{{!-- Feel free to remove this! --}}
+{{!-- <h2>Routing</h2>
+<div>
+     {{#link-to 'index'}}Home{{/link-to}}
+     {{#link-to 'about'}}About{{/link-to}}
+     {{#link-to 'product'}}Products{{/link-to}}
+     {{#link-to 'product.new'}}Create a product{{/link-to}}
+ </div>
+ <hr> --}}
+
+<div class="container">
+  <header>
+    <h1 class="title">Questions and Answers</h1>
+    <hr>
+    <div class="navbar">
+      {{#link-to 'index'}}Back To Home{{/link-to}}
+    </div>
+    <hr>
+  </header>
+
+  {{outlet}}
+
+  <footer class="credits">
+    <p>Powered by Ember 3</p>
+  </footer>
+
+</div>
+
+{{outlet}}
