@@ -24,7 +24,7 @@
 {{pressCount}} Button presses
 {{button-wrapper action="buttonClick"}} --}}
 {{!-- {{comp-test}} --}}
-
+{{!-- 
 <div class="row">
   {{#each model as |question|}}
     {{question-tile question=question}}
@@ -33,4 +33,21 @@
 
 <div class="new-question-box">
   {{new-question saveQuestion="saveQuestion"}}
+</div> --}}
+
+<h3>hbs</h3>
+<div>
+  <p>appName: {{input type="text" value=appName placeholder="app name"}}</p>
+  <p>Triggers: didUpdateAttrs, didReceiveAttrs, willUpdate, willRender, 
+      didUpdate, didRender</p>
 </div>
+
+<div>
+  <p>data: {{input type="text" value=data placeholder="Enter Data"}}</p>
+  <p>Triggers: willUpdate, willRender, didUpdate, didRender</p>
+</div>
+
+
+<hr>
+
+{{dream-path name=appName data=data}}
